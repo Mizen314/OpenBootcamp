@@ -1,0 +1,59 @@
+public class App {
+    /**
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String[] args) throws Exception {
+        int numero = -1;
+
+        if (numero > 0) {
+            System.out.println("Es positivo");
+        } else if (numero == 0) {
+            System.out.println("Es cero");
+        } else {
+            System.out.println(("Es negativo"));
+        };
+
+        int numeroWhile = 0;
+
+        while (numeroWhile < 3) {
+            System.out.println(numeroWhile);
+            numeroWhile ++;
+        }
+
+        do {
+            System.out.println("salio");
+        } while (numeroWhile > 10); {
+            if (numeroWhile >10) {
+            System.out.println("no salio");
+        }
+    }
+
+    int numeroFor = 0;
+
+    for (int i=0; i <= 3; i ++) {
+        System.out.println(numeroFor);
+        numeroFor ++;
+    }
+
+     var estacion = "Primavera";
+
+     switch(estacion){
+        case "Verano":
+        System.out.println("Es verano");
+        break;
+        case "Invierno":
+        System.out.println("Es Invierno");
+        break;
+        case "Otoño":
+        System.out.println("Es Otoño");
+        break;
+        case "Primavera":
+        System.out.println("Es Primavera");
+        break;
+        default:
+        System.out.println("No existe estacion");
+     }
+    }
+}
+
