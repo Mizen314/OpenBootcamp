@@ -1,0 +1,26 @@
+package Ejercicio1;
+
+public class Ejercicio1Main {
+    public static void main(String[] args) {
+        int entero = 1000;
+        char caracter = 'a';
+        String saludo = "Hola que tal";
+        float centavos = 0.20f;
+        double dineroActual = 305.20d;
+        boolean ganasDeEstudiar = true;
+        byte bite = 1;
+        short corto = 12;
+        long largo = 1234;
+
+        System.out.println(entero);
+        System.out.println(caracter);
+        System.out.println(saludo);
+        System.out.println(centavos);
+        System.out.println(dineroActual);
+        System.out.println(ganasDeEstudiar);
+        System.out.println(bite);
+        System.out.println(corto);
+        System.out.println(largo);
+
+    }
+}
