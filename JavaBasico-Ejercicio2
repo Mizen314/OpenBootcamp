@@ -1,0 +1,11 @@
+public class Ejercicio2Main {
+    public static void main(String[] args) {
+        System.out.println((precioConIva(500.00)));
+    }
+    static double precioConIva(double precio){
+        // IVA Argentina 21%
+        double iva = 1.21d;
+        double resultado = precio * iva;
+        return resultado;
+    }
+}
