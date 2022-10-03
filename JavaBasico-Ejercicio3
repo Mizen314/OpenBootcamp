@@ -1,0 +1,18 @@
+public class App {
+    public static void main(String[] args) throws Exception {
+
+        System.out.println(prueba());
+
+    }
+
+    public static String prueba() {
+        String[] nombres = {"Juan","Carlo","Juana"};
+
+        String temporal = "";
+
+        for(String nombre: nombres){
+            temporal += nombre + " ";
+        }
+        return temporal;
+    }
+}
