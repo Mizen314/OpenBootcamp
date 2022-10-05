@@ -1,0 +1,102 @@
+Son 4 archivos
+
+1 - Main
+
+package Ejercicio4;
+
+public class Main {
+    public static void main(String[] args) {
+
+        SmartDevice reloj = new SmartWatch();
+        SmartDevice telefono = new SmartPhone();
+
+        System.out.println(reloj);
+        System.out.println(telefono);
+
+    }
+}
+
+2 - Smart Device
+
+package Ejercicio4;
+
+public class SmartDevice {
+    String pantalla;
+    int bateria;
+    boolean telefono;
+      
+    public SmartDevice (){};
+    
+    public SmartDevice(String pantalla, int bateria, boolean telefono){
+        this.pantalla = pantalla;
+        this.bateria = bateria;
+        this.telefono = telefono;
+    }
+
+    @Override
+    public String toString() {
+        return "SmartDevice{" +
+                "pantalla='" + pantalla + '\'' +
+                ", bateria=" + bateria +
+                ", telefono=" + telefono +
+                '}';
+    }
+}
+
+3- SmartPhone
+
+package Ejercicio4;
+
+public class SmartPhone extends SmartDevice {
+    String conectividad;
+
+   public SmartPhone(){};
+
+    public SmartPhone(String conectividad) {
+        this.conectividad = conectividad;
+    }
+
+    public SmartPhone(String pantalla, int bateria, boolean telefono, String conectividad) {
+        super(pantalla, bateria, telefono);
+        this.conectividad = conectividad;
+    }
+
+    @Override
+    public String toString() {
+        return "SmartPhone{" +
+                "conectividad='" + conectividad + '\'' +
+                ", pantalla='" + pantalla + '\'' +
+                ", bateria=" + bateria +
+                ", telefono=" + telefono +
+                '}';
+    }
+}
+
+4-SmartWatch
+
+package Ejercicio4;
+
+public class SmartWatch extends SmartDevice {
+    boolean agujasDeReloj;
+
+    public SmartWatch(){};
+
+    public SmartWatch(boolean agujasDeReloj) {
+        this.agujasDeReloj = agujasDeReloj;
+    }
+
+    public SmartWatch(String pantalla, int bateria, boolean telefono, boolean agujasDeReloj) {
+        super(pantalla, bateria, telefono);
+        this.agujasDeReloj = agujasDeReloj;
+    }
+
+    @Override
+    public String toString() {
+        return "SmartWatch{" +
+                "agujasDeReloj=" + agujasDeReloj +
+                ", pantalla='" + pantalla + '\'' +
+                ", bateria=" + bateria +
+                ", telefono=" + telefono +
+                '}';
+    }
+}
