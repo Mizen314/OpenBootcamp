@@ -1,0 +1,56 @@
+Coche.Java
+
+package Ejercicio5;
+
+public class Coche implements CocheCRUD {
+
+    @Override
+    public Coche save() {
+        System.out.println("Guardando coche");
+        return null;
+    }
+
+    @Override
+    public Coche delete() {
+        System.out.println("Borrando coche");
+        return null;
+    }
+
+    @Override
+    public Coche findAll() {
+        System.out.println("Encontrarlos a todos");
+        return null;
+    }
+}
+
+CocheCRUD.java
+
+package Ejercicio5;
+
+public interface CocheCRUD {
+
+    Coche save();
+    Coche findAll();
+
+    Coche delete();
+
+}
+
+
+main.java
+
+package Ejercicio5;
+
+public class main {
+    public static void main(String[] args) {
+
+        Coche coche = new Coche();
+
+        coche.findAll();
+        coche.save();
+        coche.delete();
+
+    }
+}
+
+
