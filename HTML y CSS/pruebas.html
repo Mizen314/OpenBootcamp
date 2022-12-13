@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <title>Pruebas en HTML</title>
+</head>
+<body>
+    <form action="">
+    <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required> 
+        </div>
+        <br> <!-- Se usa para hacer espacios entre las divisiones-->
+        <div>
+            <label for="contraseña">Contraseña</label>
+            <!-- 
+                Aca se usa el tipo password para que el texo que ingrese el usuario no se vea
+            -->
+            <input type="password" name="contraseña" id="contraseña">
+        </div>
+        <br>
+        <div>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad"> 
+        </div>
+        <br>
+        <div>
+                <label for="frase">Frase favorita</label>
+                <textarea name="frase" id="fraseFavorita"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="nacimiento" id="nacimiento">
+    </div>
+    <br>
+    <div>
+        <label for="mail">Email</label>
+        <input type="email" name="mail" id="mail">
+    </div>
+    <br>
+    <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+    </div>
+    </form>
+    <div>
+        <h3>Horas para aprender HTML</h3>
+        <table>
+            <!--se arranca siempre con una fila y en este caso
+            se ponen los encabezados
+            -->
+            <tr>
+                <th>Persona</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sabado</th>
+                <th>Domingo</th>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>9 - 13</td>
+                <td>9 - 13</td>
+                <td>9 - 13</td>
+                <td>9 - 13</td>
+                <td>9 - 13</td>
+                <td>Descanso</td>
+                <td>Descanso</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>9 - 18</td>
+                <td>Descanso</td>
+                <td>Descanso</td>
+                <td>9 - 18</td>
+                <td>9 - 13</td>
+                <td>Descanso</td>
+                <td>Descanso</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
