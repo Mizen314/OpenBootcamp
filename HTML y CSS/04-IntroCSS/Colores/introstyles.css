@@ -6,9 +6,46 @@
 .colores-varios {
     color: #754668;
 }
-body {
-    background-color: darkslateblue;
-}
+
 .coloresRGB {
     color: rgb(249, 236, 204)
 }
+
+.fondo {
+    background-color: 4DAA57;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQiMiMQCfNiN-FNDaEiSd3dQdGuDo1xjjctSUhRok-PQ&s");
+    background-position: center;
+    color: #4DAA57;
+}
+.fondo-interno {
+    background-image: url("https://unbounce.com/photos/Gradient-Background.png");
+}
+
+/* tamaños, no se usa mucho la medida en pixels xq no es responsive, mas adelante se va a trabajar con el concepto de flex */
+
+.ancho {
+    background-color:#C191A1 ;
+    width: 100px;
+}
+.alto {
+    background-color:#EABFCB ;
+    height: 400px;
+    width: 200px;
+}
+
+.tarjeta {
+    border-style: solid;
+    border-color:royalblue ;
+    border-width: 1px;
+    /* esto es para sacar alguno de los bordes, o para modificarlos */
+    border-top: none;
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+/* 
+contenido: es lo que esta en el centro de la caja.
+padding: es el borde interno entre el borde y el contenido (puede ser top, left, right, bottom,etc.) 
+border: es el la personalizacion del borde, como ancho, color, si alguno que no esta, etc.
+margen: es el espacio que queda entre el contenedor referido con el dom general
+*/
+
