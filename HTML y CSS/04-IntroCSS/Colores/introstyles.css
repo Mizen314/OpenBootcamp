@@ -1,0 +1,14 @@
+/* estilos para colores */
+
+.colores {
+    color: greenyellow
+}
+.colores-varios {
+    color: #754668;
+}
+body {
+    background-color: darkslateblue;
+}
+.coloresRGB {
+    color: rgb(249, 236, 204)
+}

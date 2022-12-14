@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trabajando con CSS</title>
+        <!-- 3 formas de importar css -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- forma 2-->
+        <style>
+            html {
+                padding: 15px;;
+            }
+            h1 {
+                color:red
+            }
+        </style>
+        <!-- forma 3, con una url externa en este caso Purecss.io -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Custom Style Sheets</h1>
+        <a class="pure-button" href="#">Esto es un boton</a>
+<button class="pure-button">Esto es otro</button>
+        <button class="pure-button"> Este es uno hecho más a mano</button>
+        
+        <div>
+            <br>
+            <button style="padding: 10px; border: none; border-radius: 10px">Personalizado</button>
+        </div>
+    </body>
+</html>

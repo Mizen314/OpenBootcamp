@@ -1,0 +1,31 @@
+h1 {
+    color: rgb(46, 46, 169);
+}
+/* esto es un comentario para indicar que estoy
+haciendo prubeas de colores de tipografia */
+
+p {
+    color: blue;
+    font-size: 2rem;
+}
+#primera {
+    color:blueviolet
+}
+#segunda{
+    color: darkred;
+}
+#tercera {
+    color: dodgerblue;
+}
+
+.encabezado {
+    font-size: 24pt;
+    text-transform: uppercase;
+}
+
+/* para aplicar al mimsmo conjunto de clases/selectores  se hace con la coma y los selectores en cuestion */
+
+.autor, .ubicacion, .fecha {
+    text-decoration: underline;
+    color: black;
+}
