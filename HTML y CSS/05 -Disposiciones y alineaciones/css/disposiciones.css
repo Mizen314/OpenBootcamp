@@ -1,0 +1,25 @@
+.div-1 {
+    /* por	defecto tiene un display de block */
+    background-color: red;
+}
+.div-2 {
+    background-color: gray;
+}
+.imagen {
+    /* por	defecto tiene un display de inline-block */
+    width: 50px;
+    height: 50px;
+}
+.span1 {
+    /* por defecto el display es inline (no se 
+    afecta por el tamaño de altura*/
+    background-color: aquamarine;
+    float: left;
+}
+.span2 {
+    background-color: aquamarine;
+    /* la propiedad de float, indica que se va a 
+    ubicar dentro del contenedor en la esquina que se
+    indique */
+    float: right;
+}

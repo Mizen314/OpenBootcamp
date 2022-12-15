@@ -1,0 +1,67 @@
+div {
+    position: static;
+    border: 1px solid grey;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* La position static, es una posicion que se queda
+en el lugar, no se puede mover para ningun espacio */
+
+/* La posicion relative  es relacion con 
+la ubicacion original pero en la ubicacion 
+que le indiques, no es lo mismo
+que usar margen */
+
+.relative {
+    position: relative;
+    left: 80px;
+    
+}
+
+/* 
+-El fixed siempre se mantiene en el lugar que se indique,
+sino que cuando se scrolee, no va a colapsar con 
+nada, es decir no va a respetar otros borders. 
+-la propiedad z-index, es el posicionamiento,
+de sobre o debajo, en este caso si le ponemos 10,
+podrá sobreponerse al absolute
+
+*/
+
+.fixed {
+    position: fixed;
+    background-color: greenyellow;
+    bottom: 0px;
+    z-index: 10;
+
+}
+
+/* tambien nos permite dejarlo ubicado como el 
+relative pero en relacion con su elemento padre*/
+
+.absolute {
+    position: absolute;
+}
+
+.relative.container {
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+}
+
+/* 
+-El sticky es una mezcla del fijo con el relativo,
+se posiciona donde se desea, pero cuando se scrolea
+el elemento,acompaña el scroll, para quedarse fijo
+en la posicion que se indico,
+generalmente se usa para las barras de navegacion
+o para los botones de contacto, tipicos del 
+"chatea con nosotros" */
+
+.sticky {
+    position: sticky;
+    background-color: darksalmon;
+    top:10px;
+    z-index: 2;
+}
