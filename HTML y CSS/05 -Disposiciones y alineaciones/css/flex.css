@@ -1,0 +1,52 @@
+/* 
+El flex, basicamete lo que hace es hacer responsive
+el contenedor, y tiene las propiedades de 
+justify-content: que ajusta los elementos de forma
+horizontal. mientras que el 
+align-content: los ajusta de forma vertical
+ por defecto trae la propiedad:
+justify-content: stretch; que hace que los divs
+internos alcancen la maxima altura del container
+flex:
+por defecto trae la direccion del container en horizonal,
+esto puede cambiarse con el flex-direction:column y el
+funcionamiento del, justify-content y align-items, sera inverso
+
+
+sitio para probar esto bien
+"https://codepen.io/enxaneta/full/adLPwv"
+
+No utilizar siempre, si es necesario el block, usar
+block, pero sino usar flex.(buenas practicas)
+
+*/
+
+.flex {
+    display: flex; 
+    background-color: yellow; 
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenido-1 {
+    background-color: white;
+     /* height: 200px;*/
+    width: 100px;
+    border: 1px solid blue;
+}
+
+.contenido-2 {
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blue;
+}
+
+.contenido-3 {
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blue;
+}
+
