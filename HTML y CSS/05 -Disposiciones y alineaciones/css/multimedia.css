@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 5px;
+}
+
+.imagen-principal {
+    /* este valor vw, es el porcentaje general 
+    del contenedor */
+    width: 100vw;
+}
+
+.imagen-principal:hover {
+    width: 100vw;
+    opacity: 0.8;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.imagen-galeria {
+    width: 150px;
+}
+
+.imagen-galeria:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
