@@ -1,0 +1,50 @@
+Selectores
+
+La anidacion de Selectores corresponde a dar especificidad, desde el elemento más grande al mas chico, a modo, de referirse especificamente a un elemento.
+
+ejemplo:
+Aca se parte de la clase contedor al tipo p y a esos elementos se les aplica el color red.
+Es importante que sea del más grande al más chico xq sino no funca
+
+
+.contenedor p {
+    color: red
+}
+
+En este caso, se parte de la clase al identificador.
+
+
+.contenedor #boton-contenedor {
+    background-color: aqua;
+}
+
+Pseudoclases
+Para hacer referencia a diferentes estados de elementos del html
+
+https://www.w3schools.com/css/css_pseudo_classes.asp
+
+Las Pseudoclases, son clases pero que se activan con algo especifico y generan un cambio. Más info en el enlace anterior.
+
+Pseudoelementos
+Son variaciones para aplicar sobre los elementos, que se comportaran de una manera específica según el seleccionado. Se utilizan con dos :: antes del nombre y van acompañados del/los selectores elegidos.
+
+Syntax: The syntax of pseudo-elements:
+
+selector::pseudo-element {
+  property: value;
+}
+
+Ej.
+.libro p::first-line {
+    color: white;
+}
+en este caso hace referencia a la clase libro, al selector p de dicha clase y, ahora el pseudoelemento, a la primera línea de ese párrafo. A esto que se le aplique el color blanco.
+
+mas info en:
+
+https://www.w3schools.com/css/css_pseudo_elements.asp
+
+Especificidad
+
+Esto sería como una regla que indica que, la seleccion que prevalece es aquella
+que sea puntual para un elemento, y no la general.

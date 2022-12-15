@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* el que le ganaria a todos estos sería el
+el inline, desde el codigo HTML, con el atributo style
+ej: 
+
+<h1 style="color: black;" id="titulo">Este es el titulo</h1>
+*/
+
+
+/* persiste este sobre la clase + el selector*
+es por defecto el más específico */
+
+#titulo {
+    color: aqua;
+}
+
+/* persiste sobre la clase xq tiene más especificidad que el selector */
+.encabezado h1 {
+    color: red;
+}
+
+h1 {
+    color: green;
+}
+
+p {
+    color: red;
+}
