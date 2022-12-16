@@ -1,0 +1,68 @@
+* {
+    margin-left: 5px;
+}
+.input {
+    padding: 5px 10px;
+    width: 100%;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.input[type="password"] {
+    color: red;
+}
+
+/* aca se modifican los bordes para que sean más atractivos  */
+.input-moderno {
+    border: none;
+    /* el outline es el recuadro que se pone cuando esta seleccionado el campo, que en este caso lo saca xq no le pinta. */ 
+    outline: none;
+    border-bottom: 1px solid grey;
+    padding: 5px;
+    color: blue;
+}
+/* 
+Esto hace que cuando se seleccione el campo cambie de alguna manera */
+.input-moderno:focus {
+    border-bottom: 1px solid black;
+}
+/* esto cambia el color del placeholder */
+.input-moderno::placeholder {
+    color: blue;
+}
+
+.input-background {
+    background-color: bisque;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    /* Sombra los parametros de esto son eje x,eje y, grosor y color  */
+    box-shadow: 0 0 10px black;
+}
+
+.input-search {
+    background-image: url('../src/search.svg');
+    padding: 10px;
+    /* Aca se corrije el padding de la izquierda para que el texto comience despues de la lupa o la imagen. !son distintas las posiciones de texto como de imagen */
+    padding-left: 25px;
+    border: none;
+    background-color: #dddd;
+    border-radius: 8px;
+    margin: 10px;
+    /* 
+    el primero es para que no te mosaiquee el lugar, y la position es para darle una ubicación predeterminada*/
+    background-repeat: no-repeat;
+    background-position: 5px;
+
+}
+/* Propiedad muy particular del text area es el resize, que permite ampliarlo para se se pueda ajustar a la necesidad. */
+.descripcion {
+    resize: horizontal;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    background-color: bisque;
+}
