@@ -1,0 +1,80 @@
+.padre {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+.hijo {
+    width: 50%;
+    height: 50%;
+    background-color: beige;
+    /* transition: transform 1s ease-in 1s; */
+
+    /*infinite, hace que se ejecute infinitamente 
+    alternate, que empiece de un punto diferente al inicial, quizás el ultimo
+    si reemplazo la posicion inifinite por un número lo hace una cantidad determinada
+    
+    */
+    animation: traslacion 5s ease-in-out infinite forwards alternate;
+}
+
+.padre:hover .hijo{
+    /* transform: translateX(100%);
+    background-color: blueviolet;*/
+
+    /* de esta manera se hace al reves, cuando le paso el cursor por arriba de
+    queda quieto, pero sigue cuando salgo de encima del cursor */
+    animation-play-state: paused;
+
+}
+
+@keyframes traslacion {
+    0%{
+        background-color: beige;
+        transform: translateX(0%) translateY(0%);
+} 50% {
+    background-color: red;
+    transform: translateX(10%) translateY(50%)
+}
+
+100% {
+    background-color: darkorange;
+    transform: translateX(100%);
+}
+}
+
+
+.hijo1 {
+    width: 50%;
+    height: 50%;
+    background-color: green;
+    /* transition: transform 1s ease-in 1s; */
+}
+
+.padre:hover .hijo1{
+    /* transform: translateX(100%);
+    background-color: blueviolet;*/
+    animation: traslacion1 5s 2 forwards;
+
+}
+
+@keyframes traslacion1 {
+    0%{
+        background-color: green;
+        transform: translateX(0%) translateY(0%);
+} 25% {
+    background-color: aqua;
+    transform: translateY(0%) translateX(100%) 
+}
+50% {
+    background-color: blueviolet;
+    transform: translateX(100%) translateY(100%);
+}
+75% {
+    background-color: violet;
+    transform: translateX(0%) translateY(100%);
+}
+100% {
+    background-color: red;
+    transform: translateY(0%);
+}
+}

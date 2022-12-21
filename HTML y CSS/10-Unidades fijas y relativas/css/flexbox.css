@@ -1,0 +1,44 @@
+.contenedor {
+    background-color: yellow;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    min-height: 5rem;
+    /* Eje principal - por defecto es horizontal
+    la funcion de justify content, es de ordenar en el 
+    centro pero tomando como eje el de las x*/
+    justify-content: space-around;
+
+    /* Eje secundario - por defecto vertical
+    la funcion de align-items, es de ordernar de forma vertical al centro    
+    */
+    align-items:center;
+    /* stretch: estira los elementos para que ocupen todo el contenedor, opcion x defecto
+    center: lo deja en el medio vertical
+    baseline: lo deja abajo
+    start: lo deja arriba.
+
+    /* flex-direction: column; 
+    esta funcion  lo que hace definir el eje principal y basicamente afecta de forma inversa las funciones de justify y de align.
+    */
+
+    /*
+    wrap= permite envolver los elementos 
+    flex-wrap: nowrap;
+    flex-wrap: wrap; 
+    */
+
+    
+
+}
+
+.item {
+    background-color: salmon;
+    padding: 0.25rem;
+}
+
+/* en este caso se muestra el atributo align-self, que hace que ese elemento por si mismo cumpla las condiciones que se le asignan */
+.item2 {
+    align-self: stretch;
+    justify-self: stretch;
+}

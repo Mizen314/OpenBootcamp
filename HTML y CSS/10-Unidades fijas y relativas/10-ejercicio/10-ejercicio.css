@@ -1,0 +1,49 @@
+body {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.container {
+    display: flex;
+    margin: 0.5rem;
+    padding: 0.1rem;
+}
+
+.barra-lateral {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0,5;
+    gap: 0.2rem;
+    margin: 0.02rem;
+
+}
+
+.item {
+    height: 3rem;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item1 {
+    display: flex;
+}
+
+.principal {
+    background-color: bisque;
+    flex-grow: initial;
+    
+}
+
+@media (max-width: 640px) {
+    .barra-lateral {
+        display: flex;
+        flex-direction: row;
+        align-content: baseline;
+    }
+    .principal {
+        flex-grow: 0.2;
+    }
+}

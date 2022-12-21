@@ -1,0 +1,16 @@
+:root {
+    --color-principal: rgb(158, 31, 31);
+    --anchoprincipal: 4rem;
+
+}
+
+.titulo{
+    color: var(--color-principal)
+
+}
+
+.parrafo {
+    font-size: var(--anchoprincipal);
+    
+}
+
