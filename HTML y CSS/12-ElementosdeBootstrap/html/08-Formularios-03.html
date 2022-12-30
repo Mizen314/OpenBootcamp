@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios-III</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container  mt-4">
+        <form action="">
+            <label for="rango">Selecciona el rango</label>
+            <input type="range" id="rango"
+            class="form-range" value="5" min="0" max="10" step="0.1">
+        
+            <div class="input-group mb-4">
+                <input type="text" class="form-control" >
+                <span class="input-group-text">@</span>
+            </div>
+            <label for="e-mail">Introduce tu mail</label>
+            <div class="input-group w-50 mb-3 input-group-sm">
+                <input type="text" class="form-control" id="e-mail" placeholder="username">
+                <span class="input-group-text">@gmail.com</span>
+            </div>
+            <p>El no-wrap hace que se quede siempre ne la misma linea</p>
+            <div class="input-group input-group-lg flex-nowrap mb-3">
+                <label for="e-mail-2"></label>
+                <input type="text" class="form-control" id="e-mail-2" placeholder="username">
+                <span class="input-group-text">@gmail.com</span>
+            </div>
+            <div class="input-group mb-3">
+                    <div class="input-group-text">
+                    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with checkbox">
+            </div>
+                
+            <div class="input-group mb-3">
+                    <div class="input-group-text">
+                    <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="Gilada gilada">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-text">
+                    <input type="checkbox" class="form-check-input mt-0"  name="" id="">
+                </div>
+                <input type="text" class="form-control" name="nombre" placeholder="Tu nombre">
+                <input type="text" class="form-control" name="nombre" placeholder="Tu apellido">
+            </div>
+
+            <div class="input-group">
+                <input type="text" placeholder="haz tu busqueda" name="" id="" class="form-control">
+                <button class="btn btn-outline-secondary">Buscar</button>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" placeholder="haz tu busqueda" name="" id="" class="form-control">
+                <button class="btn btn-outline-primary dropdown-togle" type="button" data-bs-toggle="dropdown">Elige tu buscador</button>
+                <ul class="dropdown-menu">
+                    <li><a href="" class="dropdown-item">Google</a></li>
+                    <li><a href="" class="dropdown-item">Yahoo</a></li>
+                    <li><a href="" class="dropdown-item">Bing</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a href="" class="dropdown-item">Presearch</a></li>
+                </ul>
+            </div>
+            <p>Esto es una forma de poner los labels que cuando se seleccionen se hagan chicos y queden como títulos dentro del text área. Es parte del material design de google. Y si o si para que funcione tiene que llevar el placeholder sino se queda como un titulo flotante pero sin la animacion. Y tampoco se le da bola al texto del placeholder, es parte de la automatizacion del codigo pero no influye. </p>
+            <div class="form-floating">
+                <input type="text" class="form-control" name="" id="text-nombre" placeholder="Tu nombre">
+                <label for="text-nombre">Tu nombre</label>
+            </div><div class="form-floating">
+                <input type="password" placeholder="asdasd" class="form-control" name="" id="password-usuario">
+                <label for="password-usuario">Contraseña</label>
+            </div>
+
+
+            
+
+            
+        </form>
+         
+        </div>  
+        
+
+
+
+          
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
