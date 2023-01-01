@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro a SASS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Titulo: Introduccion a Sass</h1>
+        <p>Parrafo de prueba con uppercase</p>
+        <div class="listado">
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <p style="background-color: rgba(206, 207, 214, 0.297);" class="normal">Sass: Es un precompilador de css, que permite aplicar cierta lógica a CSS. Permite crear variables, hacer acciones sobre listas, matemática, mantiene la herencia similar a javascript. Como usarlo?</p>
+            <p><span class="normal"> Pagina oficial</span> <a href="https://sass-lang.com/guide">Saas</a></p>
+            <ol>
+                <li>Crear un archivo scss que será el index</li>
+                <li>Linkearlo a la html el css, derivado del scss/sass</li>
+                <li>Crear una carpeta y archivo respectivo x tipo scss
+                    <ul>
+                        <li>Componentes</li>
+                        <li>Estilos</li>
+                        <li>funciones/Builtin</li>
+                        <li>mixins</li>
+                    </ul>
+                </li>
+                <li>Instalar SASS(una vez ya instalado node, via npm)</li>
+                    <ul>
+                        <li>npm install -g sass </li>
+                    </ul>
+                <li>Importar los archivos sass o scss mediante la palabra use, desde el archivo index de scss o sass</li>
+                <li>Una vez instalado esto ahora hay que tener en cuenta que hay que compilarlo, para ello se utiliza la siguiente sintaxis</li>
+                <ul>
+                    <li>sass -w "archivo sass/scss" y archivo mapeado y linkeado al html "style.css</li>
+                    <li>En este caso: sass -w styles.scss style.css</li>
+                </ul>
+                <p>De ahora en más en el terminal, cada modificacion que se haga sobre el sass/scss se va a estar compilando al css</p>
+                <li>Con el comando @debug "funcion", va a empezar a funcionar como una consola y va indicando como funciona el comando o la funcion que se esta cargando.</li>
+                <ul>
+                    <li>Ej: Componentes: </li>
+                    <li>@use "sass/componentes" as comp;</li>
+                </ul>
+                <p class="normal">Si no se hace eso, va a tirar error de namespace</p>
+                <li>Para poder utilizar cualquier funcion builtin, hay que importarla de la siguiente manera: @use: "sass:'modulo'". 
+                    <ul>
+                        <li>@use "sass:string"</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="container">
+            <button type="button" class="btn">Boton de prueba</button>
+            <button type="button" class="btn-2">Boton de prueba2</button>
+        </div>
+        
+       
+    </div>
+        
+        
+        
+        
+    
+</body>
+</html>

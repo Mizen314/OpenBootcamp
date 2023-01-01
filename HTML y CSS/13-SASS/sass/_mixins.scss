@@ -1,0 +1,12 @@
+/* Aca lo que hace el mixin, es funcionar como una "funcion"
+ que recibe arumentos y se pueden aplicar en cuando se necesiten */
+
+ @mixin formato-texto($bg-color: #f1f1f1) {
+    color: #3f3f3f;
+    width: 50rem;
+    text-transform: uppercase;
+    background-color: $bg-color;
+}
+
+/* Esto es una variable */
+$text-color: #3f3f3f;

@@ -1,0 +1,64 @@
+@use "mixins";
+
+$para-coments:
+    margin-top 0.2rem,
+    background-color transparent,
+    font-family 'Times New Roman', Times, serif,
+    font-style italic
+    padding-left 3.2rem,
+    color blue;
+    
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    background-color: #f8eded;
+    min-height: 100vh;
+    padding: 0.5rem;
+}
+h1 {
+    margin: 0;
+    @include mixins.formato-texto(rgba(241, 238, 255, 0.855));
+}
+
+p {
+    @include mixins.formato-texto(green);
+}
+
+
+/* Se permite la anidación, a diferencia de css 
+adicionalmente, tambien las pseudoclases se usan anidadas
+y con el símbolo &: */
+.listado {
+    width: 10rem;
+    background-color: aquamarine;
+    padding: 0.5rem;
+    ul {
+        margin: 0rem 0.5rem;
+        list-style: none;
+    }
+    li {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        cursor: pointer;
+        &:hover {
+            color: rgb(255, 140, 0);
+        }
+        &:active {
+            color: red
+        }
+    }
+}
+.normal {
+    margin-top: 0.2rem;
+    background-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding-left: 3.2rem;
+    text-transform: none;
+    
+};
+
